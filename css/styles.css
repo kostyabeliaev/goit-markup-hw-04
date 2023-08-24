@@ -14,6 +14,8 @@ body {
   --primary-fonts: "Roboto", sans-serif;
   --title-font: "Raleway", sans-serif;
   --cornflower: #e7e9fc;
+  --hover-focus-icons: #31d0aa;
+  --light-slate: #8e8f99;
 }
 
 a {
@@ -64,7 +66,8 @@ img {
 /*header index*/
 
 .header {
-  border-bottom: 1px solid var(--cornflower);}
+  border-bottom: 1px solid var(--cornflower);
+}
 
 .container-header {
   display: flex;
@@ -118,7 +121,6 @@ img {
   font-style: normal;
   margin-left: auto;
   display: inline-flex;
-  
 }
 
 .address-list {
@@ -149,7 +151,14 @@ img {
 /*секція 1*/
 
 .section-one {
-  background-color: var(--nav-log-foot-color);
+  background-image: linear-gradient(
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url(/images/people-office1.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
   padding: 188px 0;
   display: flex;
   flex-direction: column;
@@ -235,6 +244,18 @@ img {
   background-color: var(--primary-wite-color);
 }
 
+.section-two-container-icon {
+  width: 246px;
+  height: 112px;
+  flex-shrink: 0;
+  border-radius: 4px;
+  background-color: var(--classic-background-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
 /*секція 3*/
 
 .section-three {
@@ -286,6 +307,9 @@ img {
   background-color: var(--primary-wite-color);
   width: calc((100% - 72px) / 4);
   border-radius: 0px 0px 4px 4px;
+  box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
+    0px 1px 1px 0px rgba(46, 47, 66, 0.16),
+    0px 1px 6px 0px rgba(46, 47, 66, 0.08);
 }
 
 .div-element-section-four {
@@ -299,6 +323,77 @@ img {
 
 .paragraph-section-four {
   text-align: center;
+  margin-bottom: 8px;
+}
+
+.list-section-four-icons {
+  display: flex;
+  gap: 24px;
+  justify-content: center;
+  align-items: center;
+}
+
+.list-section-four-icons-elements {
+  display: flex;
+  width: 40px;
+  height: 40px;
+  flex-shrink: 0;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--button-color);
+  border-radius: 50%;
+}
+
+.icon-section-four {
+  fill: var(--classic-background-color);
+}
+
+.list-section-four-icons-elements:hover,
+.list-section-four-icons-elements:focus {
+  background-color: var(--hover-focus-icons);
+}
+
+/*секція 5*/
+
+.section-five {
+  padding: 120px 0;
+}
+
+.title-two-section-five {
+}
+
+.icon-section-five {
+  fill: var(--light-slate);
+}
+
+.list-section-five-icons-elements {
+  display: flex;
+  width: 168px;
+  height: 88px;
+  flex-shrink: 0;
+  border: 1px solid var(--light-slate);
+  border-radius: 4px;
+  justify-content: center;
+  align-items: center;
+}
+
+.list-section-five {
+  display: flex;
+  gap: 24px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 72px;
+  margin-bottom: 120px;
+}
+
+.icon-section-five:hover,
+.icon-section-five:focus {
+  fill: var(--brand-color);
+}
+
+.list-section-five-icons-elements:hover,
+.list-section-five-icons-elements:focus {
+  border: 1px solid var(--brand-color);
 }
 
 /*footer*/
@@ -334,13 +429,57 @@ img {
   width: 264px;
 }
 
+.container-footer-two {
+  margin-left: auto;
+  display: inline-flex;
+}
+
+.footer-content-two {
+  color: var(--white, #fff);
+
+  /* Body Medium */
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+  /* 150% */
+  letter-spacing: 0.32px;
+  margin-bottom: 16px;
+}
+
+.list-section-footer-icons {
+  display: inline-flex;
+  align-items: flex-start;
+  gap: 16px;
+}
+
+.list-footer-icons-elements {
+  display: flex;
+  width: 40px;
+  height: 40px;
+  flex-shrink: 0;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--button-color);
+  border-radius: 50%;
+}
+
+.icon-footer {
+  fill: var(--classic-background-color);
+}
+
+.list-footer-icons-elements:hover,
+.list-footer-icons-elements:focus {
+  background-color: var(--hover-focus-icons);
+}
+
 /* portfolio */
 
 .main-portfolio {
   background-color: var(--primary-wite-color);
   padding-top: 96px;
   padding-bottom: 120px;
-
 }
 
 .list-main-portfolio {
@@ -382,6 +521,8 @@ img {
 
 .list-second-main-portfolio-element {
   width: calc((100% - 48px) / 3);
+  border: 1px solid var(--cornflower, #e7e9fc);
+  background: var(--white, #fff);
 }
 
 .div-element-main-portfolio {
