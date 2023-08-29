@@ -427,6 +427,11 @@ img {
   align-items: baseline;
 }
 
+.footer-div-a-p {
+  margin-right: 120px;
+  
+}
+
 .link-web-footer {
   display: inline-block;
   margin-bottom: 16px;
@@ -560,10 +565,8 @@ img {
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
-.link-elements-portfolio:hover
-  .overlay-text
-  .link-elements-portfolio:focus
-  .overlay-text {
+.link-elements-portfolio:hover .overlay-text,
+.link-elements-portfolio:focus .overlay-text{
   transform: translateY(0%);
 }
 
