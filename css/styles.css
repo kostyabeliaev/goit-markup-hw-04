@@ -377,6 +377,7 @@ img {
 }
 
 .title-two-section-five {
+  margin-bottom: 72px ;
 }
 
 .icon-section-five {
@@ -392,6 +393,10 @@ img {
   border-radius: 4px;
   justify-content: center;
   align-items: center;
+  color: var(--light-slate);
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1);;
+
 }
 
 .list-section-five {
@@ -401,6 +406,7 @@ img {
   align-items: center;
   margin-top: 72px;
   margin-bottom: 120px;
+  fill: currentColor;
 }
 
 .icon-section-five:hover,
@@ -411,6 +417,8 @@ img {
 .list-section-five-icons-elements:hover,
 .list-section-five-icons-elements:focus {
   border: 1px solid var(--brand-color);
+  color: var(--brand-color);
+
 }
 
 /*footer*/
@@ -429,7 +437,7 @@ img {
 
 .footer-div-a-p {
   margin-right: 120px;
-  
+
 }
 
 .link-web-footer {
