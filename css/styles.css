@@ -419,6 +419,7 @@ img {
   color: var(--brand-color);
 }
 
+
 /*footer*/
 
 .footer {
@@ -507,6 +508,12 @@ img {
 
 .icon-footer {
   fill: var(--classic-background-color);
+}
+
+.icon-footer:hover,
+.icon-footer:focus {
+  fill: var(--primary-wite-color);
+  
 }
 
 .list-footer-icons-elements:hover,
