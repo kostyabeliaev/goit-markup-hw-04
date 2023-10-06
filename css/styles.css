@@ -359,6 +359,7 @@ img {
   align-items: center;
   background-color: var(--button-color);
   border-radius: 50%;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .icon-section-four {
@@ -513,7 +514,7 @@ img {
 .icon-footer:hover,
 .icon-footer:focus {
   fill: var(--primary-wite-color);
-  
+
 }
 
 .list-footer-icons-elements:hover,
